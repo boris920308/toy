@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
             Log.d("MainActivity", "height : $height , weight: $weight ")
 
             val intent = Intent(this, ResultActivity::class.java)
+
+            intent.putExtra("height", height)
+            intent.putExtra("weight", weight)
             startActivity(intent)
 
         }
