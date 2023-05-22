@@ -1,5 +1,6 @@
 package hoon.example.bmicalculator
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -28,6 +29,8 @@ class MainActivity : AppCompatActivity() {
             val weight:Int = etWeight.text.toString().toInt()
             Log.d("MainActivity", "height : $height , weight: $weight ")
 
+            val intent = Intent(this, ResultActivity::class.java)
+            startActivity(intent)
 
         }
 
